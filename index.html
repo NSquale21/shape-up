@@ -9,7 +9,85 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		
+		<header class="container">
+			<section class="row justify-content-center">
+				<div class="shadow col-md-9 mt-3 p-3">
+					<h1 class="text-center mb-3">Add A Shape!</h1>
+					<div class="input-group mb-3">
+						<input type="text" class="form-control shadow-sm" id="rec-h" placeholder="Height px" aria-label="Height" aria-describedby="add-rectangle">
+						<input type="text" class="form-control shadow-sm" id="rec-w" placeholder="Width px" aria-label="Width" aria-describedby="add-rectangle">
+						<div class="input-group-append">
+							<button class="btn btn-outline-primary shadow-sm" type="button" id="add-rectangle">Add Rectangle</button>
+						</div>
+					</div>
+					<div class="input-group mb-3">
+						<input type="text" class="form-control shadow-sm" id="side-h" placeholder="Side height px" aria-label="Square" aria-describedby="add-square">
+						<div class="input-group-append">
+							<button class="btn btn-outline-secondary shadow-sm" type="button" id="add-square">Add Square</button>
+						</div>
+					</div>
+					<div class="input-group mb-3">
+						<input type="text" class="form-control shadow-sm" id="cir-radius" placeholder="Radius px" aria-label="Circle" aria-describedby="add-circle">
+						<div class="input-group-append">
+							<button class="btn btn-outline-success shadow-sm" type="button" id="add-circle">Add Circle</button>
+						</div>
+					</div>
+					<div class="input-group mb-3">
+						<input type="text" class="form-control shadow-sm" id="tri-h" placeholder="Height px" aria-label="Triangle" aria-describedby="add-triangle">
+						<div class="input-group-append">
+							<button class="btn btn-outline-danger shadow-sm" type="button" id="add-triangle">Add Triangle</button>
+						</div>
+					</div>
+					<div class="d-flex justify-content-center">
+						<button type="button" class="btn btn-primary shadow-sm clear-canvas">Clear Canvas</button>
+					</div>
+				</div>
+			</section>
+		</header>
+		<main class="container">
+			<section class="row my-3 justify-content-around">
+				<article class="canvas shadow"></article>
+				<aside class="side-bar shadow d-flex flex-column justify-content-around align-items-center">
+					<h3 class="mt-3">Description</h3>
+					<div class="input-group input-group-sm mb-3 p-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="inputGroup-sizing-sm">Shape</span>
+						</div>
+						<input type="text" class="form-control info text-center" id="shape" aria-label="Shape" aria-describedby="shape">
+					</div>
+					<div class="input-group input-group-sm mb-3 p-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="inputGroup-sizing-sm">Height</span>
+						</div>
+						<input type="text" class="form-control info text-center" id="height" aria-label="Height" aria-describedby="height">
+					</div>
+					<div class="input-group input-group-sm mb-3 p-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="inputGroup-sizing-sm">Width</span>
+						</div>
+						<input type="text" class="form-control info text-center" id="width" aria-label="Width" aria-describedby="Width">
+					</div>
+					<div class="input-group input-group-sm mb-3 p-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="inputGroup-sizing-sm">Area</span>
+						</div>
+						<input type="text" class="form-control info text-center" id="area" aria-label="Area" aria-describedby="area">
+					</div>
+					<div class="input-group input-group-sm mb-3 p-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="inputGroup-sizing-sm">Perim</span>
+						</div>
+						<input type="text" class="form-control info text-center" id="perimeter" aria-label="Perimeter" aria-describedby="perimeter">
+					</div>
+					<div class="input-group input-group-sm mb-3 p-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="inputGroup-sizing-sm">Radius</span>
+						</div>
+						<input type="text" class="form-control info text-center" id="radius" aria-label="Radius" aria-describedby="radius">
+					</div>
+				</aside>
+			</section>
+		</main>
 		<!-- Bootstrap scripts -->
 		<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
