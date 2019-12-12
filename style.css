@@ -1,0 +1,26 @@
+.btn {
+  width: 130px;
+}
+
+.clear {
+	width: 75px;
+}
+
+.canvas {
+	width: 600px;
+	height: 600px;
+	position: relative;
+}
+
+.side-bar {
+	width: 300px;
+	height: 600px;
+}
+
+.shape {
+	position: absolute;
+}
+
+h1 {
+	font-size: 1.75em;
+}
